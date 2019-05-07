@@ -1,7 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
-
+let addition = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter}
+})();
+console.log(addition());
+console.log(addition());
+console.log(addition());
+console.log(addition());
+console.log(addition());
+console.log(addition());
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
